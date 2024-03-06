@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Delivery App</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/restaurants">Restaurants</a></li>
+                <li><a href="/orders">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Search for Restaurants</h2>
+            <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search by name, cuisine, location...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="featured-restaurants">
+            <h2>Featured Restaurants</h2>
+            <div class="restaurant-card">
+                <h3>Restaurant Name</h3>
+                <p>Cuisine Type</p>
+                <p>Rating</p>
+                <a href="/restaurant/1">View Menu</a>
+            </div>
+            <!-- Add more restaurant cards here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Delivery App</p>
+    </footer>
+</body>
+</html>
+
