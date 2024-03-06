@@ -8,41 +8,40 @@
 </head>
 <body>
     <header>
-        <h1>Food Delivery App</h1>
         <nav>
+            <div class="logo">Food Delivery</div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Register</a></li>
-                <li><a href="/restaurants">Restaurants</a></li>
-                <li><a href="/orders">Orders</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="search">
-            <h2>Search for Restaurants</h2>
-            <form action="/search" method="GET">
-                <input type="text" name="query" placeholder="Search by name, cuisine, location...">
-                <button type="submit">Search</button>
-            </form>
+        <section class="hero">
+            <h1>Welcome to Food Delivery</h1>
+            <p>Order your favorite food online and enjoy fast delivery!</p>
+            <a href="#" class="btn">Order Now</a>
         </section>
-
-        <section id="featured-restaurants">
-            <h2>Featured Restaurants</h2>
-            <div class="restaurant-card">
-                <h3>Restaurant Name</h3>
-                <p>Cuisine Type</p>
-                <p>Rating</p>
-                <a href="/restaurant/1">View Menu</a>
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature">
+                <h3>Convenience</h3>
+                <p>Order food from the comfort of your home.</p>
             </div>
-            <!-- Add more restaurant cards here -->
+            <div class="feature">
+                <h3>Variety</h3>
+                <p>Choose from a wide range of cuisines and dishes.</p>
+            </div>
+            <div class="feature">
+                <h3>Speed</h3>
+                <p>Get your food delivered quickly with our efficient delivery service.</p>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Food Delivery App</p>
+        <p>&copy; 2024 Food Delivery App. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -1,14 +1,14 @@
-/* styles.css */
-
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li, form, input, button {
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
@@ -17,20 +17,26 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
+.logo {
+    font-size: 24px;
 }
 
-nav ul li {
-    display: inline;
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+ul li a {
     color: #fff;
     text-decoration: none;
 }
@@ -39,39 +45,48 @@ main {
     padding: 20px;
 }
 
-#search input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-#search button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#featured-restaurants {
-    margin-top: 20px;
-}
-
-.restaurant-card {
+.hero {
+    text-align: center;
+    padding: 100px 0;
     background-color: #f4f4f4;
-    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-.restaurant-card h3 {
-    margin-top: 0;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.restaurant-card a {
-    display: block;
-    margin-top: 10px;
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #007bff;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 

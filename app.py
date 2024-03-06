@@ -1,5 +1,5 @@
 # Import the necessary libraries
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 import sqlite3
 
 # Create a Flask app
@@ -9,11 +9,10 @@ app = Flask(__name__)
 conn = sqlite3.connect('food_delivery.db')
 c = conn.cursor()
 
+# Define the route to render the index.html file
 @app.route('/')
 def index():
-    return 'Welcome to my Flask app!'
-if __name__ == '__main__':
-    app.run()
+    return render_template('index.html')
 
 # Define the route for the user registration
 @app.route('/api/user/register', methods=['POST'])
@@ -150,3 +149,5 @@ def get_restaurant_menu():
     # Return the restaurant menu
     return jsonify({'menu': menu}), 200
 
+if __name__ == '__main__':
+    app.run()
